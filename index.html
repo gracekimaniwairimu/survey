@@ -1,0 +1,85 @@
+<html lang="en">
+ <head></head>
+ <body class="bg-success">
+   <link rel="stylesheet" type="text/css" href="css/main.css">
+
+  <title>Survey Form</title> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- favicon.ico --> 
+  <link href="https://image.ibb.co/icGEVA/android-chrome-192x192.png" rel="shortcut icon"> 
+  <!-- Bootstrap v3.3.7 --> 
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> 
+  <!-- CSS --> 
+  <link href="css/style.css" rel="stylesheet"> 
+  <h1 id="title" class="text-center">Survey Form</h1> 
+  <form action="#" method="GET" id="survey-form" class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1" onsubmit="notify();"> 
+   <p id="description" class="text-center lastElement">Let us know something about your programming skills</p> 
+   <!-- Name --> 
+   <label for="name" id="name-label">* Name:</label> 
+   <input type="text" id="name" name="name" placeholder="Enter your name" required class="form-control lastElement"> 
+   <!-- Email --> 
+   <label for="email" id="email-label">* Email:</label> 
+   <input type="email" id="email" name="email" placeholder="Enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required class="form-control lastElement"> 
+   <!-- Age --> 
+   <label for="number" id="number-label">* Age:</label> 
+   <input type="number" id="number" name="age" placeholder="Enter your age" min="10" max="100" required class="form-control lastElement"> 
+   <!-- Role --> 
+   <label for="dropdown" id="dropdown-label">Which option best describes your current role:</label> 
+   <select id="dropdown" class="form-control lastElement"> <option value="learner/beginner">Learner/Beginner</option> <option value="juniorProgrammer">Junior Programmer</option> <option value="intermediateProgrammer">Intermediate Programmer</option> <option value="seniorProgrammer">Senior Programmer</option> </select> 
+   <!-- Recommendation --> 
+   <p>How likely is that you would recommend programming to a friend:</p> 
+   <input type="radio" name="recommendation" value="definitely" id="definitely"> 
+   <label for="definitely">Definitely</label>
+   <br> 
+   <input type="radio" name="recommendation" value="maybe" id="maybe"> 
+   <label for="maybe">Maybe</label>
+   <br> 
+   <input type="radio" name="recommendation" value="notSure" id="notSure"> 
+   <label for="notSure" class="lastElement">Not sure</label> 
+   <!-- Programming technologies --> 
+   <p>Programming technologies you use:</p> 
+   <input type="checkbox" id="html" name="progtech" value="HTML"> 
+   <label for="html">HTML</label>
+   <br> 
+   <input type="checkbox" id="css" name="progtech" value="CSS"> 
+   <label for="css">CSS</label>
+   <br> 
+   <input type="checkbox" id="js" name="progtech" value="JavaScript"> 
+   <label for="js">JavaScript</label>
+   <br> 
+   <input type="checkbox" id="cs" name="progtech" value="C#"> 
+   <label for="cs">C#</label>
+   <br> 
+   <input type="checkbox" id="sql" name="progtech" value="SQL"> 
+   <label for="sql">SQL</label>
+   <br> 
+   <input type="checkbox" id="python" name="progtech" value="Python"> 
+   <label for="python">Python</label>
+   <br> 
+   <input type="checkbox" id="cplusx2" name="progtech" value="C++"> 
+   <label for="cplusx2">C++</label>
+   <br> 
+   <input type="checkbox" id="swift" name="progtech" value="Swift"> 
+   <label for="swift">Swift</label>
+   <br> 
+   <input type="checkbox" id="java" name="progtech" value="Java"> 
+   <label for="java">Java</label>
+   <br> 
+   <input type="checkbox" id="php" name="progtech" value="PHP"> 
+   <label for="php">PHP</label>
+   <br> 
+   <input type="checkbox" id="ruby" name="progtech" value="Ruby"> 
+   <label for="ruby">Ruby</label>
+   <br> 
+   <input type="checkbox" id="c" name="progtech" value="C"> 
+   <label for="c" class="lastElement">C</label> 
+   <!-- Comment --> 
+   <p>Any Comments or Suggestions?</p> 
+   <textarea id="comment" name="comment" rows="4" class="form-control lastElement"></textarea> 
+   <!-- Submit button --> 
+   <input type="submit" id="submit" value="Submit" class="center-block btn btn-primary"> 
+  </form> 
+  <script src="js/script.js"></script> 
+ </body>
+</html>
